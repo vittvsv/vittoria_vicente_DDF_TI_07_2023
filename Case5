@@ -1,0 +1,10 @@
+# selecionando a tabela users_emails
+SELECT * 
+FROM users_emails;
+# selecionando a coluna1(coluna com a data de criação do usuário) 
+WHERE coluna1
+# a função between vai selecionar um determinado periodo e a função DATE_ADD vai retornar uma data de acordo com a  - Data atual menos 30 dias e a data atual
+    BETWEEN DATE_ADD(dd, -30, CURRENT_DATE()) AND CURRENT_DATE()
+# logo a faixa de tempo selecionado é (data atual - 30 dias, data atual)
+
+# Para criar um relatório automático podemos fazer a integração do SQL Server com o Power BI para ter um relatorio visualmente bonito e automático.
